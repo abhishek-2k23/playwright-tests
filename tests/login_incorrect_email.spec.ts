@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/test"
 
-test.setTimeout(60000);
 test("Login user with incorrect email and correct password", async ({
   page,
 }) => {

@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/test"
 
-test.setTimeout(60000)
 test.describe("Test 5 : Register with existing email: ", () => {
   test("Register with existing email:", async ({ page }) => {
     //first register the user

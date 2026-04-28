@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-test.setTimeout(90000);
 test('Logout User', async({page}) => {
 
         //first register the user
