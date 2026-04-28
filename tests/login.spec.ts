@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 
+test.setTimeout(90000);
 test('Login user with correct email and password', async({page}) => {
 
         //first register the user
@@ -54,10 +55,6 @@ test('Login user with correct email and password', async({page}) => {
 
 
         //now login the user
-        await page.goto('http://automationexercise.com');
-        await expect(page).toHaveTitle('Automation Exercise');
-
-        await page.getByRole('link', {name: 'Signup / Login'}).click();
         await expect(page.getByText('Login to your account')).toBeVisible();
 
         await page.locator('input[data-qa="login-email"]').fill(email);

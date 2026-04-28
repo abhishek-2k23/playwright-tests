@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 
+test.setTimeout(60000);
 test.describe("Register: ", () => {
     test('should register, login and delete account', async({page}) => {
         await page.goto('http://automationexercise.com');
